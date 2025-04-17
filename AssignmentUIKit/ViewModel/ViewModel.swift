@@ -54,7 +54,7 @@ class ViewModel {
         
         let sorted = frequency.sorted { $0.value > $1.value }.prefix(3)
         
-        var result = "List 1 (\(filtereFruits.count) items)\n"
+        var result = "Fruits count \(filtereFruits.count) items\n"
         for (char, count) in sorted {
             result += "\(char) = \(count)\n"
         }
